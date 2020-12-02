@@ -1,37 +1,45 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE work.matrix_package.ALL;
+USE work.utils_package.ALL;
 
 ENTITY MatrixTest IS
 END MatrixTest;
 
 ARCHITECTURE MatrixTestArch OF MatrixTest IS
 
-    COMPONENT MatrixMul88 IS
+    COMPONENT MatrixMulGen IS
         PORT (
             R, clk : IN STD_LOGIC;
             a : IN MATRIX(1 TO M_SIZE, 1 TO M_SIZE);
             b : IN MATRIX(1 TO M_SIZE, 1 TO M_SIZE);
-            ready : OUT STD_LOGIC;
+            ready : INOUT STD_LOGIC;
             c : OUT MATRIX(1 TO M_SIZE, 1 TO M_SIZE));
     END COMPONENT;
-
-    CONSTANT clk_period : TIME := 20 ns;
-
+    SIGNAL R : STD_LOGIC;
     SIGNAL clk : STD_LOGIC;
-    SIGNAL a : MATRIX(1 TO M_SIZE, 1 TO M_SIZE) := ((37, 43, 51, 41), (33, 11, 69, 9), (64, 0, 24, 26), (19, 90, 39, 76));
-    SIGNAL b : MATRIX(1 TO M_SIZE, 1 TO M_SIZE) := ((15, 25, 25, 26), (6, 39, 26, 0), (37, 82, 87, 79), (43, 36, 54, 39));
-    SIGNAL c : MATRIX(1 TO M_SIZE, 1 TO M_SIZE);
+    SIGNAL a : MATRIX(1 TO M_SIZE, 1 TO M_SIZE) := ((6, 8, 3, 7), (9, 5, 9, 1), (4, 2, 6, 10), (1, 1, 4, 5));
+    SIGNAL b : MATRIX(1 TO M_SIZE, 1 TO M_SIZE) := ((6, 2, 2, 2), (4, 8, 3, 5), (10, 9, 5, 8), (10, 3, 2, 10));
+    SIGNAL c : MATRIX(1 TO M_SIZE, 1 TO M_SIZE) := (OTHERS => (OTHERS => 0));
     SIGNAL ready : STD_LOGIC;
 
 BEGIN
-    portm : MatrixMul88 PORT MAP('0', clk, a, b, ready, c);
+    portm : MatrixMulGen PORT MAP(R, clk, a, b, ready, c);
+
+    R_process : PROCESS
+    BEGIN
+        R <= '1';
+        WAIT FOR clk_period;
+        R <= '0';
+        WAIT;
+    END PROCESS;
 
     clk_process : PROCESS
     BEGIN
-        FOR i IN 1 TO 56 LOOP
+        FOR i IN 1 TO M_SIZE * M_SIZE LOOP
             clk <= '1';
             WAIT FOR clk_period/2;
+            --matrix_to_string(c, M_SIZE, M_SIZE);
             clk <= '0';
             WAIT FOR clk_period/2;
         END LOOP;
