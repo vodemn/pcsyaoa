@@ -1,40 +1,19 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
+LIBRARY work;
+USE work.utils_package.ALL;
 
 PACKAGE processors_package IS
-    COMPONENT MatrixProcInner IS
+    COMPONENT MatrixProc IS
+        GENERIC (
+            use_a_out : BOOLEAN := TRUE;
+            use_b_out : BOOLEAN := TRUE);
         PORT (
             R, clk : IN STD_LOGIC;
             a : IN INTEGER;
             b : IN INTEGER;
             a_out : OUT INTEGER;
             b_out : OUT INTEGER;
-            c : INOUT INTEGER);
-    END COMPONENT;
-
-    COMPONENT MatrixProcVertEdge IS
-        PORT (
-            R, clk : IN STD_LOGIC;
-            a : IN INTEGER;
-            b : IN INTEGER;
-            b_out : OUT INTEGER;
-            c : INOUT INTEGER);
-    END COMPONENT;
-
-    COMPONENT MatrixProcHorEdge IS
-        PORT (
-            R, clk : IN STD_LOGIC;
-            a : IN INTEGER;
-            b : IN INTEGER;
-            a_out : OUT INTEGER;
-            c : INOUT INTEGER);
-    END COMPONENT;
-
-    COMPONENT MatrixProcCorner IS
-        PORT (
-            R, clk : IN STD_LOGIC;
-            a : IN INTEGER;
-            b : IN INTEGER;
             c : INOUT INTEGER);
     END COMPONENT;
 
@@ -42,18 +21,25 @@ END PACKAGE processors_package;
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
+LIBRARY work;
+USE work.utils_package.ALL;
 
-ENTITY MatrixProcInner IS
+ENTITY MatrixProc IS
+    GENERIC (
+        use_a_out : BOOLEAN := TRUE;
+        use_b_out : BOOLEAN := TRUE);
     PORT (
         R, clk : IN STD_LOGIC;
-        a : IN INTEGER;
-        b : IN INTEGER;
-        a_out : OUT INTEGER;
-        b_out : OUT INTEGER;
-        c : INOUT INTEGER);
-END MatrixProcInner;
+        a : IN INTEGER := 0;
+        b : IN INTEGER := 0;
+        a_out : OUT INTEGER := 0;
+        b_out : OUT INTEGER := 0;
+        c : INOUT INTEGER := 0);
+END MatrixProc;
 
-ARCHITECTURE MatrixProcInnerArch OF MatrixProcInner IS
+ARCHITECTURE MatrixProcArch OF MatrixProc IS
+    SIGNAL a_inner : INTEGER := 0;
+    SIGNAL b_inner : INTEGER := 0;
 BEGIN
 
     PROCESS (R, clk)
@@ -62,99 +48,17 @@ BEGIN
             c <= 0;
         ELSE
             IF rising_edge(clk) THEN
-                a_out <= a;
-                b_out <= b;
-                c <= c + a * b;
+                a_inner <= fix_int(a);
+                b_inner <= fix_int(b);
+                IF (use_A_out) THEN
+                    a_out <= a_inner;
+                END IF;
+                IF (use_b_out) THEN
+                    b_out <= b_inner;
+                END IF;
+                c <= fix_int(c) + a_inner * b_inner;
             END IF;
         END IF;
     END PROCESS;
 
-END ARCHITECTURE MatrixProcInnerArch;
-
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
-
-ENTITY MatrixProcVertEdge IS
-    PORT (
-        R, clk : IN STD_LOGIC;
-        a : IN INTEGER;
-        b : IN INTEGER;
-        b_out : OUT INTEGER;
-        c : INOUT INTEGER);
-END MatrixProcVertEdge;
-
-ARCHITECTURE MatrixProcVertEdgeArch OF MatrixProcVertEdge IS
-
-BEGIN
-
-    PROCESS (R, clk)
-    BEGIN
-        IF (R = '1') THEN
-            c <= 0;
-        ELSE
-            IF rising_edge(clk) THEN
-                b_out <= b;
-                c <= c + a * b;
-            END IF;
-        END IF;
-    END PROCESS;
-
-END ARCHITECTURE MatrixProcVertEdgeArch;
-
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
-
-ENTITY MatrixProcHorEdge IS
-    PORT (
-        R, clk : IN STD_LOGIC;
-        a : IN INTEGER;
-        b : IN INTEGER;
-        a_out : OUT INTEGER;
-        c : INOUT INTEGER);
-END MatrixProcHorEdge;
-
-ARCHITECTURE MatrixProcHorEdgeArch OF MatrixProcHorEdge IS
-
-BEGIN
-
-    PROCESS (R, clk)
-    BEGIN
-        IF (R = '1') THEN
-            c <= 0;
-        ELSE
-            IF rising_edge(clk) THEN
-                a_out <= a;
-                c <= c + a * b;
-            END IF;
-        END IF;
-    END PROCESS;
-
-END ARCHITECTURE MatrixProcHorEdgeArch;
-
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
-
-ENTITY MatrixProcCorner IS
-    PORT (
-        R, clk : IN STD_LOGIC;
-        a : IN INTEGER;
-        b : IN INTEGER;
-        c : INOUT INTEGER);
-END MatrixProcCorner;
-
-ARCHITECTURE MatrixProcCornerArch OF MatrixProcCorner IS
-
-BEGIN
-
-    PROCESS (R, clk)
-    BEGIN
-        IF (R = '1') THEN
-            c <= 0;
-        ELSE
-            IF rising_edge(clk) THEN
-                c <= c + a * b;
-            END IF;
-        END IF;
-    END PROCESS;
-
-END ARCHITECTURE MatrixProcCornerArch;
+END ARCHITECTURE MatrixProcArch;
