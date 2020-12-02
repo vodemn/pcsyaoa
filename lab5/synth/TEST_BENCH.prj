@@ -1,0 +1,2 @@
+vhdl work "../lib/matrix.vhd"
+vhdl work "../lib/test.vhd"

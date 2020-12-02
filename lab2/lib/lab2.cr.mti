@@ -1,0 +1,85 @@
+C:/Users/vadim/Documents/ModelSim/lab2/scheme.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/vadim/Documents/ModelSim/lab2/scheme.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package lib
+-- Compiling entity SchemeModel
+-- Compiling architecture SchemeArch of SchemeModel
+
+} {} {}} C:/Users/vadim/Documents/ModelSim/lab2/nex2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/vadim/Documents/ModelSim/lab2/nex2.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity NEX2
+-- Compiling architecture NEX2_arch of NEX2
+
+} {} {}} C:/Users/vadim/Documents/ModelSim/lab2/naoa2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/vadim/Documents/ModelSim/lab2/naoa2.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity NAOA2
+-- Compiling architecture NAOA2_arch of NAOA2
+
+} {} {}} C:/Users/vadim/Documents/ModelSim/lab2/nao3.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/vadim/Documents/ModelSim/lab2/nao3.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity NAO3
+-- Compiling architecture NAO3_arch of NAO3
+
+} {} {}} C:/Users/vadim/Documents/ModelSim/lab2/no4.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/vadim/Documents/ModelSim/lab2/no4.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity NO4
+-- Compiling architecture NO4_arch of NO4
+
+} {} {}} C:/Users/vadim/Documents/ModelSim/lab2/n.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/vadim/Documents/ModelSim/lab2/n.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity N
+-- Compiling architecture N_arch of N
+
+} {} {}} C:/Users/vadim/Documents/ModelSim/lab2/na3.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/vadim/Documents/ModelSim/lab2/na3.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity NA3
+-- Compiling architecture NA3_arch of NA3
+
+} {} {}} C:/Users/vadim/Documents/ModelSim/lab2/no2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/vadim/Documents/ModelSim/lab2/no2.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity NO2
+-- Compiling architecture NO2_arch of NO2
+
+} {} {}} C:/Users/vadim/Documents/ModelSim/lab2/na3o2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/vadim/Documents/ModelSim/lab2/na3o2.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity NA3O2
+-- Compiling architecture NA3O2_arch of NA3O2
+
+} {} {}} C:/Users/vadim/Documents/ModelSim/lab2/scheme_test.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/vadim/Documents/ModelSim/lab2/scheme_test.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity scheme_test
+-- Compiling architecture MainBehavior of scheme_test
+** Error: C:/Users/vadim/Documents/ModelSim/lab2/scheme_test.vhd(78): (vcom-1136) Unknown identifier "write".
+
+** Error: C:/Users/vadim/Documents/ModelSim/lab2/scheme_test.vhd(84): VHDL Compiler exiting
+
+} {8.0 9.0 10.0 11.0} {}}

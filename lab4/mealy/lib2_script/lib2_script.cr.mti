@@ -1,0 +1,7 @@
+C:/Users/vadim/Documents/University/pcsyaoa/lab4/lib2_script/mealy.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/vadim/Documents/University/pcsyaoa/lab4/lib2_script/mealy.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity Mealy
+-- Compiling architecture rtl of Mealy
+
+} {} {}}

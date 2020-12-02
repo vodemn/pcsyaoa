@@ -1,0 +1,63 @@
+$date
+  Mon Nov 02 20:34:21 2020
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 2 ! x[1:2] $end
+$var reg 3 " y[1:3] $end
+$scope module p1 $end
+$var reg 2 # x[1:2] $end
+$var reg 3 $ y[1:3] $end
+$comment state is not handled $end
+$comment next_state is not handled $end
+$var reg 2 % statebin[1:2] $end
+$upscope $end
+$enddefinitions $end
+#0
+b00 !
+b000 "
+b00 #
+b000 $
+b00 %
+#50000000
+b11 !
+b11 #
+#100000000
+b10 !
+b001 "
+b10 #
+b001 $
+b10 %
+#150000000
+b01 !
+b010 "
+b01 #
+b010 $
+b11 %
+#200000000
+b00 !
+b000 "
+b00 #
+b000 $
+#250000000
+b11 !
+b11 #
+#300000000
+b10 !
+b10 #
+b00 %
+#350000000
+b01 !
+b010 "
+b01 #
+b010 $
+b11 %
+#400000000
+b00 !
+b000 "
+b00 #
+b000 $

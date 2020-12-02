@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/vadim/Documents/University/pcsyaoa/lab4/synth2/Mealy.xst" -ofn "C:/Users/vadim/Documents/University/pcsyaoa/lab4/synth2/Mealy.syr" 

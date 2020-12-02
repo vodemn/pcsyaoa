@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/vadim/Documents/University/pcsyaoa/lab4/trigger/synth_scheme/TriggerScheme.xst" -ofn "C:/Users/vadim/Documents/University/pcsyaoa/lab4/trigger/synth_scheme/TriggerScheme.syr" 

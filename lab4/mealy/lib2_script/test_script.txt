@@ -1,0 +1,9 @@
+vsim -novopt mealy
+force clk '1' 0, '0' 10 -repeat 20
+force rst '1' 0, '0' 20 -repeat 180
+force x0 '0' 0, '1' 20, '1' 40, '0' 60 -repeat 80
+force x1 '0' 0, '1' 20, '0' 40, '1' 60 -repeat 80
+add wave *
+view wave
+run 180 ns
+quit –sim

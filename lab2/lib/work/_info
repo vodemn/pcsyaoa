@@ -1,0 +1,938 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/vadim/Documents/ModelSim/lab2/sim
+Ein_1
+Z0 w1601327024
+Z1 dC:/Users/vadim/Documents/ModelSim/lab2
+8C:/Users/vadim/Documents/ModelSim/lab2/in1.vhd
+FC:/Users/vadim/Documents/ModelSim/lab2/in1.vhd
+l0
+L1
+VZiohS]JLTM]<nVE`m@6CJ2
+!s100 MJ[h@lhd>k[VJOCE=FTkX2
+Z2 OP;C;10.4a;61
+32
+Z3 !s110 1601328443
+!i10b 1
+Z4 !s108 1601328443.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vadim/Documents/ModelSim/lab2/in1.vhd|
+!s107 C:/Users/vadim/Documents/ModelSim/lab2/in1.vhd|
+!i113 1
+Z5 o-work work -2002 -explicit -O0
+Z6 tExplicit 1
+An
+DEx4 work 4 in_1 0 22 ZiohS]JLTM]<nVE`m@6CJ2
+Z7 8C:/Users/vadim/Documents/ModelSim/lab2/n.vhd
+Z8 FC:/Users/vadim/Documents/ModelSim/lab2/n.vhd
+l2
+L1
+V3kVTPk=e4XAl6HG8JTH323
+!s100 HA_LQKiRXBh5030Endm913
+R2
+32
+Z9 !s110 1601327035
+!i10b 1
+Z10 !s108 1601327035.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vadim/Documents/ModelSim/lab2/n.vhd|
+Z12 !s107 C:/Users/vadim/Documents/ModelSim/lab2/n.vhd|
+!i113 1
+R5
+R6
+Ein_2
+Z13 w1601327026
+R1
+8C:/Users/vadim/Documents/ModelSim/lab2/in2.vhd
+FC:/Users/vadim/Documents/ModelSim/lab2/in2.vhd
+l0
+L1
+V;XOjW77T4]3?0S:d6>Vi41
+!s100 hcKGVCW2FM8nMU2SQeFcn2
+R2
+32
+R3
+!i10b 1
+R4
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vadim/Documents/ModelSim/lab2/in2.vhd|
+!s107 C:/Users/vadim/Documents/ModelSim/lab2/in2.vhd|
+!i113 1
+R5
+R6
+Ano2
+Z14 DEx4 work 4 in_2 0 22 ;XOjW77T4]3?0S:d6>Vi41
+Z15 8C:/Users/vadim/Documents/ModelSim/lab2/no2.vhd
+Z16 FC:/Users/vadim/Documents/ModelSim/lab2/no2.vhd
+l2
+L1
+VoW2:@;W>Z701]Jza^<FUH2
+!s100 of9nHhmUj^`ZhEQT[m_Yi0
+R2
+32
+R9
+!i10b 1
+R10
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vadim/Documents/ModelSim/lab2/no2.vhd|
+Z18 !s107 C:/Users/vadim/Documents/ModelSim/lab2/no2.vhd|
+!i113 1
+R5
+R6
+Anex2
+R14
+Z19 8C:/Users/vadim/Documents/ModelSim/lab2/nex2.vhd
+Z20 FC:/Users/vadim/Documents/ModelSim/lab2/nex2.vhd
+l2
+L1
+V8=zf?fSTSj9LX:NnneDS82
+!s100 LI5fhVU;CEFJA3U8ZVz^^1
+R2
+32
+R9
+!i10b 1
+R10
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vadim/Documents/ModelSim/lab2/nex2.vhd|
+Z22 !s107 C:/Users/vadim/Documents/ModelSim/lab2/nex2.vhd|
+!i113 1
+R5
+R6
+Ein_3
+w1601327021
+R1
+8C:/Users/vadim/Documents/ModelSim/lab2/in3.vhd
+FC:/Users/vadim/Documents/ModelSim/lab2/in3.vhd
+l0
+L1
+V^TIl0FEW=QS9hoQBcE8>m3
+!s100 jWfTbzD_dcjRemoFn_9dm1
+R2
+32
+R3
+!i10b 1
+R4
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vadim/Documents/ModelSim/lab2/in3.vhd|
+!s107 C:/Users/vadim/Documents/ModelSim/lab2/in3.vhd|
+!i113 1
+R5
+R6
+Ana3
+Z23 w1601328462
+DEx4 work 4 in_3 0 22 ^TIl0FEW=QS9hoQBcE8>m3
+Z24 8C:/Users/vadim/Documents/ModelSim/lab2/na3.vhd
+Z25 FC:/Users/vadim/Documents/ModelSim/lab2/na3.vhd
+l9
+L8
+VB?0LgG]DBbzRj8I`LmV[`1
+!s100 UKG^gdC;[Qn7KN^SP:Obk2
+R2
+32
+Z26 !s110 1601328481
+!i10b 1
+Z27 !s108 1601328481.000000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vadim/Documents/ModelSim/lab2/na3.vhd|
+Z29 !s107 C:/Users/vadim/Documents/ModelSim/lab2/na3.vhd|
+!i113 1
+R5
+R6
+Ein_4
+Z30 w1601327023
+R1
+8C:/Users/vadim/Documents/ModelSim/lab2/in4.vhd
+FC:/Users/vadim/Documents/ModelSim/lab2/in4.vhd
+l0
+L1
+Vagon[URMBVfnTaJQ@<4<S0
+!s100 LaIeghaAPdB=b8[N04:332
+R2
+32
+R3
+!i10b 1
+R4
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vadim/Documents/ModelSim/lab2/in4.vhd|
+!s107 C:/Users/vadim/Documents/ModelSim/lab2/in4.vhd|
+!i113 1
+R5
+R6
+Anaoa2
+Z31 DEx4 work 4 in_4 0 22 agon[URMBVfnTaJQ@<4<S0
+Z32 8C:/Users/vadim/Documents/ModelSim/lab2/naoa2.vhd
+Z33 FC:/Users/vadim/Documents/ModelSim/lab2/naoa2.vhd
+l2
+L1
+VVC18e[ed?V<FzCoadIW2<1
+!s100 ZWCMk@h7GgYzo3_e4ESNN3
+R2
+32
+R9
+!i10b 1
+R10
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vadim/Documents/ModelSim/lab2/naoa2.vhd|
+Z35 !s107 C:/Users/vadim/Documents/ModelSim/lab2/naoa2.vhd|
+!i113 1
+R5
+R6
+Anao3
+R31
+Z36 8C:/Users/vadim/Documents/ModelSim/lab2/nao3.vhd
+Z37 FC:/Users/vadim/Documents/ModelSim/lab2/nao3.vhd
+l2
+L1
+V?876iZRQh2[9fz5Mk_cfO3
+!s100 N80IFizj5ePhBnW4C^gWD1
+R2
+32
+R9
+!i10b 1
+R10
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vadim/Documents/ModelSim/lab2/nao3.vhd|
+Z39 !s107 C:/Users/vadim/Documents/ModelSim/lab2/nao3.vhd|
+!i113 1
+R5
+R6
+Ana3o2
+R31
+Z40 8C:/Users/vadim/Documents/ModelSim/lab2/na3o2.vhd
+Z41 FC:/Users/vadim/Documents/ModelSim/lab2/na3o2.vhd
+l2
+L1
+VNO7?k:n:TznZ>OR1kFWfk2
+!s100 5EUX5@7lgM<kAK_bX0Qbn1
+R2
+32
+R9
+!i10b 1
+R10
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vadim/Documents/ModelSim/lab2/na3o2.vhd|
+Z43 !s107 C:/Users/vadim/Documents/ModelSim/lab2/na3o2.vhd|
+!i113 1
+R5
+R6
+Ano4
+R31
+Z44 8C:/Users/vadim/Documents/ModelSim/lab2/no4.vhd
+Z45 FC:/Users/vadim/Documents/ModelSim/lab2/no4.vhd
+l2
+L1
+V^`Y5]Y40EP0`BmFXWzf:G1
+!s100 [V=b]cNSAiDRJ8o@aG]^i1
+R2
+32
+R9
+!i10b 1
+R10
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vadim/Documents/ModelSim/lab2/no4.vhd|
+Z47 !s107 C:/Users/vadim/Documents/ModelSim/lab2/no4.vhd|
+!i113 1
+R5
+R6
+Plib
+Z48 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z49 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+w1601328774
+R1
+8C:/Users/vadim/Documents/ModelSim/lab2/lib.vhd
+FC:/Users/vadim/Documents/ModelSim/lab2/lib.vhd
+l0
+L4
+V[D58@@nfz9FedASJWK?SS2
+!s100 7nEV?PNPB:ZzTY5:3i9oj0
+R2
+32
+!s110 1601363820
+!i10b 1
+!s108 1601363820.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vadim/Documents/ModelSim/lab2/lib.vhd|
+!s107 C:/Users/vadim/Documents/ModelSim/lab2/lib.vhd|
+!i113 1
+R5
+R6
+En
+Z50 w1601328626
+R48
+R49
+R1
+R7
+R8
+l0
+L4
+VamUVia;3;>V>;7=XS?i8;2
+!s100 UYZ@bngZHUaD7MA`1AZTT1
+R2
+32
+Z51 !s110 1601366086
+!i10b 1
+Z52 !s108 1601366086.000000
+R11
+R12
+!i113 1
+R5
+R6
+An_arch
+R48
+R49
+DEx4 work 1 n 0 22 amUVia;3;>V>;7=XS?i8;2
+l9
+L8
+V[Y;]5Z_>HXNf62_e[Te[h3
+!s100 alk728Ac=BX]R`VB;FajA2
+R2
+32
+R51
+!i10b 1
+R52
+R11
+R12
+!i113 1
+R5
+R6
+En_model
+Z53 w1601328476
+R48
+R49
+R1
+R7
+R8
+l0
+L4
+VMoA0el5Kdh0mVU4JGXkz12
+!s100 Q[mdAn3@KS8?6;lA[iiom3
+R2
+32
+R26
+!i10b 1
+R27
+R11
+R12
+!i113 1
+R5
+R6
+An
+R48
+R49
+DEx4 work 7 n_model 0 22 MoA0el5Kdh0mVU4JGXkz12
+l9
+L8
+V:`7<li]FJXCONI1mHaEgC2
+!s100 PXhm:@Y?1USH<?YVIiSiH1
+R2
+32
+R26
+!i10b 1
+R27
+R11
+R12
+!i113 1
+R5
+R6
+Ena3
+Z54 w1601328647
+R48
+R49
+R1
+R24
+R25
+l0
+L4
+VY8kJ4_nDG0mfgenH<42DD2
+!s100 N8@lo]gZ;EBcak]Ui7[m32
+R2
+32
+R51
+!i10b 1
+R52
+R28
+R29
+!i113 1
+R5
+R6
+Ana3_arch
+R48
+R49
+DEx4 work 3 na3 0 22 Y8kJ4_nDG0mfgenH<42DD2
+l9
+L8
+VCK5_d_kbmibcJ4g3GlN^60
+!s100 <6m02:2kM;Fg@^l6OdM]g2
+R2
+32
+R51
+!i10b 1
+R52
+R28
+R29
+!i113 1
+R5
+R6
+Ena3_model
+R23
+R48
+R49
+R1
+R24
+R25
+l0
+L4
+V3W0URRG[G3c7VZ4AM_M=a1
+!s100 7nKH^SGEd9oKV:U<Hfa4L3
+R2
+32
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 1
+R5
+R6
+Ena3o2
+Z55 w1601328664
+R48
+R49
+R1
+R40
+R41
+l0
+L4
+V1_^_?f2i;em^FUFi]1<Q10
+!s100 >3Hi67LlE`k0C[1b`cNHe2
+R2
+32
+R51
+!i10b 1
+R52
+R42
+R43
+!i113 1
+R5
+R6
+Ana3o2_arch
+R48
+R49
+DEx4 work 5 na3o2 0 22 1_^_?f2i;em^FUFi]1<Q10
+l9
+L8
+V`LWKlZFL7BdE4MPBR<QeR3
+!s100 VQ0LeD`j[cK]b@>JM>zJ41
+R2
+32
+R51
+!i10b 1
+R52
+R42
+R43
+!i113 1
+R5
+R6
+Ena3o2_model
+Z56 w1601328470
+R48
+R49
+R1
+R40
+R41
+l0
+L4
+V;AEnR;Bl3P[:V0PkmX8Zh3
+!s100 IWoo1NHo5^3fIEejAUHU`1
+R2
+32
+R26
+!i10b 1
+R27
+R42
+R43
+!i113 1
+R5
+R6
+Ana3o2
+R48
+R49
+DEx4 work 11 na3o2_model 0 22 ;AEnR;Bl3P[:V0PkmX8Zh3
+l9
+L8
+V``=X^hC1ZAel[UUZBFM6]1
+!s100 mO@OH]=K[M908k458^XYK1
+R2
+32
+R26
+!i10b 1
+R27
+R42
+R43
+!i113 1
+R5
+R6
+Enao3
+Z57 w1601328669
+R48
+R49
+R1
+R36
+R37
+l0
+L4
+V5^:ITZo^ldiUNofl8A`?Q3
+!s100 dhUiN^g>MEOeDk<hVl8iV1
+R2
+32
+R51
+!i10b 1
+R52
+R38
+R39
+!i113 1
+R5
+R6
+Anao3_arch
+R48
+R49
+DEx4 work 4 nao3 0 22 5^:ITZo^ldiUNofl8A`?Q3
+l9
+L8
+V4Ybfn8aVQHHo`k9kQAAQA0
+!s100 E_c;_No1lYO9zPY=Y28U;1
+R2
+32
+R51
+!i10b 1
+R52
+R38
+R39
+!i113 1
+R5
+R6
+Enao3_model
+Z58 w1601328474
+R48
+R49
+R1
+R36
+R37
+l0
+L4
+VAEE2J5DM<]QVz1NT:=EAI1
+!s100 8N;i;?ckfTZ01OYkWZ4MJ1
+R2
+32
+R26
+!i10b 1
+R27
+R38
+R39
+!i113 1
+R5
+R6
+Anao3
+R48
+R49
+DEx4 work 10 nao3_model 0 22 AEE2J5DM<]QVz1NT:=EAI1
+l9
+L8
+VlPX]fg<O4S2?`UGlmN`Bj0
+!s100 Gf>`bbT6UMU466m6>BTYQ2
+R2
+32
+R26
+!i10b 1
+R27
+R38
+R39
+!i113 1
+R5
+R6
+Enaoa2
+Z59 w1601328676
+R48
+R49
+R1
+R32
+R33
+l0
+L4
+V_cTm2b90XhFM=W6fb`D082
+!s100 96ikDoT47nGU>@MQE=NfI3
+R2
+32
+R51
+!i10b 1
+R52
+R34
+R35
+!i113 1
+R5
+R6
+Anaoa2_arch
+R48
+R49
+DEx4 work 5 naoa2 0 22 _cTm2b90XhFM=W6fb`D082
+l9
+L8
+Vb@RnZWh;V^I_?W5;H42lg1
+!s100 m`?oHQCBnkLoc@HP2P;ZT3
+R2
+32
+R51
+!i10b 1
+R52
+R34
+R35
+!i113 1
+R5
+R6
+Enaoa2_model
+Z60 w1601328472
+R48
+R49
+R1
+R32
+R33
+l0
+L4
+VKo=Hk_XbO`1<W]2_:I@[g2
+!s100 XB@gR:b^WcLVkV?g3TbnJ1
+R2
+32
+R26
+!i10b 1
+R27
+R34
+R35
+!i113 1
+R5
+R6
+Anaoa2
+R48
+R49
+DEx4 work 11 naoa2_model 0 22 Ko=Hk_XbO`1<W]2_:I@[g2
+l9
+L8
+VFNl:]kh?gQd7iZFWdGgi`3
+!s100 9HOPEk8RzNUXCmiXjD7^?1
+R2
+32
+R26
+!i10b 1
+R27
+R34
+R35
+!i113 1
+R5
+R6
+Enex2
+Z61 w1601328682
+R48
+R49
+R1
+R19
+R20
+l0
+L4
+VH>zEPj_>Z>`2HcP<8bejg0
+!s100 6aF6kN0ETTFCjY;Sk]9`V0
+R2
+32
+R51
+!i10b 1
+R52
+R21
+R22
+!i113 1
+R5
+R6
+Anex2_arch
+R48
+R49
+DEx4 work 4 nex2 0 22 H>zEPj_>Z>`2HcP<8bejg0
+l9
+L8
+VS<GYT:V1nKO;>O0o95AW_3
+!s100 Cj]ORjOYMz<=kcTH6j]OR1
+R2
+32
+R51
+!i10b 1
+R52
+R21
+R22
+!i113 1
+R5
+R6
+Enex2_model
+Z62 w1601328467
+R48
+R49
+R1
+R19
+R20
+l0
+L4
+VYoXfgkI=Pd:<Xdf=XFcTG3
+!s100 0AE3?gUWU=7@D0;THjMSS2
+R2
+32
+R26
+!i10b 1
+R27
+R21
+R22
+!i113 1
+R5
+R6
+Anex2
+R48
+R49
+DEx4 work 10 nex2_model 0 22 YoXfgkI=Pd:<Xdf=XFcTG3
+l9
+L8
+V7QJb04I17b<jAEhVDczbH2
+!s100 k8QLScR`Neji]4Czl`eVT2
+R2
+32
+R26
+!i10b 1
+R27
+R21
+R22
+!i113 1
+R5
+R6
+Eno2
+Z63 w1601328689
+R48
+R49
+R1
+R15
+R16
+l0
+L4
+VXzh8CEDPFgT5HN7hmHQ0j1
+!s100 6Y81z64[iPiS^;ml<Z^_I2
+R2
+32
+R51
+!i10b 1
+R52
+R17
+R18
+!i113 1
+R5
+R6
+Ano2_arch
+R48
+R49
+DEx4 work 3 no2 0 22 Xzh8CEDPFgT5HN7hmHQ0j1
+l9
+L8
+VBUNfnFCag[j[<mAl<nZ421
+!s100 Q9U;o0o9kKPjYfS^5aP3_0
+R2
+32
+R51
+!i10b 1
+R52
+R17
+R18
+!i113 1
+R5
+R6
+Eno2_model
+Z64 w1601328464
+R48
+R49
+R1
+R15
+R16
+l0
+L4
+VD<8kMY]T`74S?7S_IBHc<3
+!s100 `M<=iGhFi=Y]Bia6m>i;O1
+R2
+32
+Z65 !s110 1601328482
+!i10b 1
+Z66 !s108 1601328482.000000
+R17
+R18
+!i113 1
+R5
+R6
+Ano2
+R48
+R49
+DEx4 work 9 no2_model 0 22 D<8kMY]T`74S?7S_IBHc<3
+l9
+L8
+VgofenR]m0?=@jH9o1iDEj0
+!s100 RJ0[LGdNjImT8mW_N]eRA0
+R2
+32
+R65
+!i10b 1
+R66
+R17
+R18
+!i113 1
+R5
+R6
+Eno4
+Z67 w1601328695
+R48
+R49
+R1
+R44
+R45
+l0
+L4
+VbmG5AMoJim3;S^HKQb9RV1
+!s100 2;aB2UEg6JCH;0a0kIohn1
+R2
+32
+R51
+!i10b 1
+R52
+R46
+R47
+!i113 1
+R5
+R6
+Ano4_arch
+R48
+R49
+DEx4 work 3 no4 0 22 bmG5AMoJim3;S^HKQb9RV1
+l9
+L8
+VQ]K@1zEXYG6fW<nkN:In60
+!s100 3^4ADFig1PdNW[RNT7ikN0
+R2
+32
+R51
+!i10b 1
+R52
+R46
+R47
+!i113 1
+R5
+R6
+Eno4_model
+Z68 w1601328459
+R48
+R49
+R1
+R44
+R45
+l0
+L4
+V1O`2]mA4Pf=hTXHN@diPz0
+!s100 =003MzCSQU[PI@EXeoj:K2
+R2
+32
+R26
+!i10b 1
+R27
+R46
+R47
+!i113 1
+R5
+R6
+Ano4
+R48
+R49
+DEx4 work 9 no4_model 0 22 1O`2]mA4Pf=hTXHN@diPz0
+l9
+L8
+VJGl27>Vd>7cen6]Gz[eKE3
+!s100 jLkGXT:6Xz90YEe6h>UR:1
+R2
+32
+R26
+!i10b 1
+R27
+R46
+R47
+!i113 1
+R5
+R6
+Escheme_test
+Z69 w1601366714
+R48
+R49
+R1
+Z70 8C:/Users/vadim/Documents/ModelSim/lab2/scheme_test.vhd
+Z71 FC:/Users/vadim/Documents/ModelSim/lab2/scheme_test.vhd
+l0
+L5
+V0PTlIZXzie:on8S:9TaCP3
+!s100 QcCMAaC0iTlKI^B=E61fk3
+R2
+32
+!s110 1601366762
+!i10b 1
+!s108 1601366762.000000
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vadim/Documents/ModelSim/lab2/scheme_test.vhd|
+!s107 C:/Users/vadim/Documents/ModelSim/lab2/scheme_test.vhd|
+!i113 1
+R5
+R6
+Amainbehavior
+R48
+R49
+DEx4 work 11 scheme_test 0 22 0PTlIZXzie:on8S:9TaCP3
+l30
+L8
+Vh@UVhecD3AL8>H[AOR1780
+!s100 <:n<9?ZU3`[hi5Xe5]7^k3
+R2
+32
+!s110 1601366343
+!i10b 1
+!s108 1601366343.000000
+R72
+!s107 C:/Users/vadim/Documents/ModelSim/lab2/scheme_test.vhd|
+!i113 1
+R5
+R6
+Eschememodel
+Z73 w1601364135
+Z74 DPx4 work 3 lib 0 22 [D58@@nfz9FedASJWK?SS2
+R48
+R49
+R1
+Z75 8C:/Users/vadim/Documents/ModelSim/lab2/scheme.vhd
+Z76 FC:/Users/vadim/Documents/ModelSim/lab2/scheme.vhd
+l0
+L5
+VOZP[K?0A]`cTOZ3LQnn5L1
+!s100 GTZ5d1]m@XWYGfaTn^4Nb1
+R2
+32
+Z77 !s110 1601366087
+!i10b 1
+R52
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vadim/Documents/ModelSim/lab2/scheme.vhd|
+Z79 !s107 C:/Users/vadim/Documents/ModelSim/lab2/scheme.vhd|
+!i113 1
+R5
+R6
+Aschemearch
+R74
+R48
+R49
+DEx4 work 11 schememodel 0 22 OZP[K?0A]`cTOZ3LQnn5L1
+l17
+L9
+VeTLTBgICfKA@YdVE<7]6j0
+!s100 L=X[A[i_c>[HR]:P;]^082
+R2
+32
+R77
+!i10b 1
+R52
+R78
+R79
+!i113 1
+R5
+R6

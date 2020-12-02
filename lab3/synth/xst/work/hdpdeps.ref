@@ -1,0 +1,33 @@
+V3 17
+FL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd 2020/11/18.17:10:58 P.20131013
+EN work/add1 1605708720 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/add1/struct_1 1605708721 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd \
+      EN work/add1 1605708720
+EN work/add2 1605708722 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/add2/struct_1 1605708723 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd \
+      EN work/add2 1605708722
+EN work/adder_2 1605708724 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/adder_2/structure 1605708725 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd \
+      EN work/adder_2 1605708724 CP add1 CP add2
+EN work/adder_2s 1605708726 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/adder_2s/structure 1605708727 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd \
+      EN work/adder_2s 1605708726 CP add1 CP add2
+EN work/SchemeModel 1605708728 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/SchemeModel/SchemeArch 1605708729 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd \
+      EN work/SchemeModel 1605708728 CP adder_2 CP adder_2s
+FL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/scheme.vhd 2020/11/18.17:10:50 P.20131013

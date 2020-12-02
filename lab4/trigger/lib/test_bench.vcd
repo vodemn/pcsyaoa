@@ -1,0 +1,421 @@
+$date
+  Sat Oct 31 21:50:59 2020
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 1 ! r_test $end
+$var reg 1 " s_test $end
+$var reg 1 # c_test $end
+$var reg 1 $ q_scheme $end
+$var reg 1 % q_alg $end
+$scope module p1 $end
+$var reg 1 & r $end
+$var reg 1 ' s $end
+$var reg 1 ( c $end
+$var reg 1 ) q $end
+$var reg 9 * x[9:1] $end
+$scope module x9 $end
+$var reg 1 + a $end
+$var reg 1 , b $end
+$var reg 1 - c $end
+$var reg 1 . d $end
+$var reg 1 / y $end
+$upscope $end
+$scope module x8 $end
+$var reg 1 0 a $end
+$var reg 1 1 y $end
+$upscope $end
+$scope module x6 $end
+$var reg 1 2 a $end
+$var reg 1 3 y $end
+$upscope $end
+$scope module x5 $end
+$var reg 1 4 a $end
+$var reg 1 5 y $end
+$upscope $end
+$scope module x4 $end
+$var reg 1 6 a $end
+$var reg 1 7 y $end
+$upscope $end
+$scope module x3 $end
+$var reg 1 8 a $end
+$var reg 1 9 b $end
+$var reg 1 : c $end
+$var reg 1 ; y $end
+$upscope $end
+$scope module x2 $end
+$var reg 1 < a $end
+$var reg 1 = b $end
+$var reg 1 > c $end
+$var reg 1 ? d $end
+$var reg 1 @ y $end
+$upscope $end
+$scope module x1 $end
+$var reg 1 A a $end
+$var reg 1 B b $end
+$var reg 1 C c $end
+$var reg 1 D y $end
+$upscope $end
+$upscope $end
+$scope module p2 $end
+$var reg 1 E r $end
+$var reg 1 F s $end
+$var reg 1 G c $end
+$var reg 1 H q $end
+$upscope $end
+$enddefinitions $end
+#0
+1!
+0"
+0#
+U$
+U%
+1&
+0'
+0(
+U)
+bUUUUUUUUU *
+U+
+U,
+U-
+U.
+U/
+10
+U1
+U2
+U3
+U4
+U5
+06
+U7
+08
+U9
+U:
+U;
+U<
+U=
+U>
+U?
+U@
+0A
+UB
+UC
+UD
+1E
+0F
+0G
+UH
+#2000000
+bU0UUU1UUU *
+1.
+01
+U3
+14
+U5
+17
+0:
+1=
+0C
+#4000000
+bU0UU01UUU *
+0,
+05
+0?
+#5000000
+U/
+U@
+#6000000
+bU0UU011U1 *
+1+
+12
+1;
+1<
+1>
+1D
+#7000000
+U/
+#8000000
+0$
+0%
+0)
+03
+0H
+#9000000
+U/
+#11000000
+bU0UU01101 *
+0-
+U/
+09
+0@
+#15000000
+1;
+#16000000
+b10UU01101 *
+1/
+1B
+#20000000
+1D
+#50000000
+1"
+1#
+1'
+1(
+16
+18
+1A
+1F
+1G
+#52000000
+b10UU00101 *
+0.
+04
+07
+0=
+#54000000
+b10UU10101 *
+1,
+15
+1;
+1?
+1D
+#58000000
+#59000000
+b00UU10101 *
+0/
+0@
+0B
+#63000000
+1D
+#100000000
+0!
+0#
+0&
+0(
+00
+06
+0E
+0G
+#102000000
+b01UU11101 *
+1.
+11
+14
+17
+1:
+1=
+1C
+#104000000
+b01UU01101 *
+0,
+05
+0?
+#106000000
+b01UU01000 *
+0+
+02
+0;
+0<
+0>
+0D
+#108000000
+1$
+1%
+1)
+13
+1H
+#109000000
+b11UU01000 *
+1/
+1B
+#111000000
+b11UU01010 *
+1-
+1/
+19
+1@
+#113000000
+0D
+#115000000
+0;
+#116000000
+b01UU01010 *
+0/
+0B
+#120000000
+0D
+#150000000
+1#
+1(
+16
+1G
+#152000000
+b01UU00010 *
+0.
+04
+07
+0=
+#154000000
+b01UU10010 *
+1,
+15
+1?
+#157000000
+b11UU10010 *
+1/
+1@
+1B
+#158000000
+#159000000
+1/
+1@
+#161000000
+0D
+#200000000
+0#
+0(
+06
+0G
+#202000000
+b11UU11010 *
+1.
+14
+17
+1=
+#204000000
+b11UU01010 *
+0,
+05
+0?
+#207000000
+b01UU01010 *
+0/
+1@
+0B
+#208000000
+#209000000
+0/
+1@
+#211000000
+0D
+#250000000
+0"
+1#
+0'
+1(
+16
+08
+0A
+0F
+1G
+#252000000
+b01UU00010 *
+0.
+04
+07
+0=
+#254000000
+b01UU10011 *
+1+
+1,
+15
+0;
+1>
+1?
+1D
+#259000000
+b01UU10001 *
+0-
+0/
+09
+0@
+#263000000
+0%
+b01UU10101 *
+12
+1;
+1<
+0H
+#264000000
+0/
+#265000000
+0$
+0)
+03
+#268000000
+0@
+#300000000
+0#
+0(
+06
+0G
+#302000000
+b01UU11101 *
+1.
+14
+17
+1=
+#304000000
+b01UU01101 *
+0,
+05
+0?
+#307000000
+0@
+#309000000
+b11UU01101 *
+1/
+0@
+1B
+#313000000
+b11UU01100 *
+0+
+0>
+0D
+#318000000
+1/
+0@
+#350000000
+1#
+1(
+16
+1G
+#352000000
+b11UU00100 *
+0.
+04
+07
+0=
+#354000000
+b11UU10100 *
+1,
+15
+1?
+#357000000
+b11UU10110 *
+1-
+1/
+19
+1@
+#359000000
+1/
+1@
+#361000000
+b11UU10010 *
+02
+0;
+0<
+#362000000
+1/
+#363000000
+1$
+1%
+1)
+13
+1H
+#366000000
+1@

@@ -1,0 +1,10 @@
+AR add1 struct_1 C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd sub00/vhpl01 1605708721
+EN adder_2s NULL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd sub00/vhpl06 1605708726
+AR adder_2s structure C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd sub00/vhpl07 1605708727
+EN add1 NULL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd sub00/vhpl00 1605708720
+EN add2 NULL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd sub00/vhpl02 1605708722
+AR schememodel schemearch C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd sub00/vhpl09 1605708729
+AR add2 struct_1 C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd sub00/vhpl03 1605708723
+AR adder_2 structure C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd sub00/vhpl05 1605708725
+EN adder_2 NULL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd sub00/vhpl04 1605708724
+EN schememodel NULL C:/Users/vadim/Documents/University/pcsyaoa/lab3/lib/one_file.vhd sub00/vhpl08 1605708728

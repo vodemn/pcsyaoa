@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\vadim\Documents\University\pcsyaoa\lab1\synth\func.ncd
+OUTFILE=C:\Users\vadim\Documents\University\pcsyaoa\lab1\synth\func.bit
+FAMILY=Spartan3
+PART=xc3s50-5pq208
+WORKINGDIR=C:\Users\vadim\Documents\University\pcsyaoa\lab1\synth
+LICENSE=WebPack
+USER_INFO=__0_0_0

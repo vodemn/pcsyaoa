@@ -1,0 +1,26 @@
+V3 12
+FL C:/Users/vadim/Documents/University/pcsyaoa/lab4/trigger/lib/one_file.vhd 2020/11/18.17:25:53 P.20131013
+EN work/N 1605710355 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab4/trigger/lib/one_file.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/N/N_arch 1605710356 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab4/trigger/lib/one_file.vhd \
+      EN work/N 1605710355
+EN work/NAO 1605710357 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab4/trigger/lib/one_file.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/NAO/NAO_arch 1605710358 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab4/trigger/lib/one_file.vhd \
+      EN work/NAO 1605710357
+EN work/NOAA 1605710359 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab4/trigger/lib/one_file.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/NOAA/NOAA_arch 1605710360 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab4/trigger/lib/one_file.vhd \
+      EN work/NOAA 1605710359
+EN work/TriggerScheme 1605710361 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab4/trigger/lib/one_file.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/TriggerScheme/SchemeArch 1605710362 \
+      FL C:/Users/vadim/Documents/University/pcsyaoa/lab4/trigger/lib/one_file.vhd \
+      EN work/TriggerScheme 1605710361 CP NOAA CP N CP NAO
