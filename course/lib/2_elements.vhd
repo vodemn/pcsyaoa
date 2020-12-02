@@ -10,11 +10,11 @@ PACKAGE processors_package IS
             use_b_out : BOOLEAN := TRUE);
         PORT (
             R, clk : IN STD_LOGIC;
-            a : IN INTEGER;
-            b : IN INTEGER;
-            a_out : OUT INTEGER;
-            b_out : OUT INTEGER;
-            c : INOUT INTEGER);
+            a : IN INTEGER := 0;
+            b : IN INTEGER := 0;
+            a_out : OUT INTEGER := 0;
+            b_out : OUT INTEGER := 0;
+            c : INOUT INTEGER := 0);
     END COMPONENT;
 
 END PACKAGE processors_package;
@@ -38,8 +38,6 @@ ENTITY MatrixProc IS
 END MatrixProc;
 
 ARCHITECTURE MatrixProcArch OF MatrixProc IS
-    SIGNAL a_inner : INTEGER := 0;
-    SIGNAL b_inner : INTEGER := 0;
 BEGIN
 
     PROCESS (R, clk)
@@ -48,15 +46,13 @@ BEGIN
             c <= 0;
         ELSE
             IF rising_edge(clk) THEN
-                a_inner <= fix_int(a);
-                b_inner <= fix_int(b);
                 IF (use_A_out) THEN
-                    a_out <= a_inner;
+                    a_out <= a;
                 END IF;
                 IF (use_b_out) THEN
-                    b_out <= b_inner;
+                    b_out <= b;
                 END IF;
-                c <= fix_int(c) + a_inner * b_inner;
+                c <= c + a * b;
             END IF;
         END IF;
     END PROCESS;
