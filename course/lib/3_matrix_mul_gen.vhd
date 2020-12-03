@@ -43,21 +43,31 @@ BEGIN
             ready <= '1';
         END IF;
 
-        canOperate <= R = '0' AND counter < 3 * N;
+        canOperate <= R = '0' AND counter < 3 * N - 1;
 
         IF (canOperate) THEN
-            IF (counter < 3 * N) THEN
-                IF rising_edge(clk) THEN
-                    REPORT "count: " & INTEGER'image(counter);
-                    counter <= counter + 1;
-                    --matrix_to_string(a_inner, M_SIZE, M_SIZE);
-                    matrix_to_string(b_inner, M_SIZE, M_SIZE);
-                END IF;
+            IF rising_edge(clk) THEN
+                --REPORT "count: " & INTEGER'image(counter);
+                counter <= counter + 1;
+                --matrix_to_string(a_inner, M_SIZE, M_SIZE);
+                --matrix_to_string(b_inner, M_SIZE, M_SIZE);
             END IF;
+        END IF;
+    END PROCESS;
+
+    ready_observer : PROCESS (counter, clk)
+        VARIABLE counter_expired : BOOLEAN;
+    BEGIN
+        counter_expired := counter = 3 * N - 1;
+        IF rising_edge(clk) THEN
+            IF (counter_expired) THEN
+                ready <= '1';
+            ELSE
+                ready <= '0';
+            END IF;
+        END IF;
+        IF (counter_expired) THEN
             c <= c_result;
-            ready <= '0';
-        ELSE
-            ready <= '1';
         END IF;
     END PROCESS;
 
@@ -78,21 +88,40 @@ BEGIN
 
     GEN_PROC_ROWS : FOR I IN 1 TO N - 1 GENERATE -- row--
         GEN_PROC_COLUMNS : FOR J IN 1 TO N - 1 GENERATE -- column
-            EDGE : IF J = 1 GENERATE
-                pA : MatrixProc GENERIC MAP(use_a_out => FALSE) PORT MAP(R, clk, A_inner(I, N), B_inner(I, N), B_inner(I + 1, N), c_result(I, N));
-                pB : MatrixProc GENERIC MAP(use_B_out => FALSE) PORT MAP(R, clk, A_inner(N, I), B_inner(N, I), A_inner(N, I + 1), c_result(N, I));
-            END GENERATE EDGE;
-            CORNER : IF I = N AND J = N GENERATE
-                pL : MatrixProc GENERIC MAP(use_A_out => FALSE, use_B_out => FALSE) PORT MAP(R, clk, A_inner(N, N), B_inner(N, N), c_result(N, N));
-            END GENERATE CORNER;
-            INNER : IF I < N AND J < N GENERATE
-                pI : MatrixProc PORT MAP(R, clk, A_inner(I, J), B_inner(I, J), A_inner(I, J + 1), B_inner(I + 1, J), c_result(I, J));
-            END GENERATE INNER;
+            pI : MatrixProc PORT MAP(
+                R => R,
+                clk => clk,
+                a => A_inner(I, J),
+                b => B_inner(I, J),
+                a_out => A_inner(I, J + 1),
+                b_out => B_inner(I + 1, J),
+                c => c_result(I, J));
         END GENERATE GEN_PROC_COLUMNS;
 
-        --pA : MatrixProc GENERIC MAP(use_a_out => FALSE) PORT MAP(R, clk, A_inner(I, N), B_inner(I, N), B_inner(I + 1, N), c_result(I, N));
-        --pB : MatrixProc GENERIC MAP(use_B_out => FALSE) PORT MAP(R, clk, A_inner(N, I), B_inner(N, I), A_inner(N, I + 1), c_result(N, I));
+        pA : MatrixProc GENERIC MAP(use_a_out => FALSE)
+        PORT MAP(
+            R => R,
+            clk => clk,
+            a => A_inner(I, N),
+            b => B_inner(I, N),
+            b_out => B_inner(I + 1, N),
+            c => c_result(I, N));
+
+        pB : MatrixProc GENERIC MAP(use_B_out => FALSE)
+        PORT MAP(
+            R => R,
+            clk => clk,
+            a => A_inner(N, I),
+            b => B_inner(N, I),
+            a_out => A_inner(N, I + 1),
+            c => c_result(N, I));
     END GENERATE GEN_PROC_ROWS;
 
-    --pL : MatrixProc GENERIC MAP(use_A_out => FALSE, use_B_out => FALSE) PORT MAP(R, clk, A_inner(N, N), B_inner(N, N), c_result(N, N));
+    pL : MatrixProc GENERIC MAP(use_A_out => FALSE, use_B_out => FALSE)
+    PORT MAP(
+        R => R,
+        clk => clk,
+        a => A_inner(N, N),
+        b => B_inner(N, N),
+        c => c_result(N, N));
 END ARCHITECTURE MatrixMulGenArch;

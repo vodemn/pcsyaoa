@@ -21,7 +21,7 @@ ARCHITECTURE MatrixTestArch OF MatrixTest IS
     SIGNAL a : MATRIX(1 TO M_SIZE, 1 TO M_SIZE) := ((6, 8, 3, 7), (9, 5, 9, 1), (4, 2, 6, 10), (1, 1, 4, 5));
     SIGNAL b : MATRIX(1 TO M_SIZE, 1 TO M_SIZE) := ((6, 2, 2, 2), (4, 8, 3, 5), (10, 9, 5, 8), (10, 3, 2, 10));
     SIGNAL c : MATRIX(1 TO M_SIZE, 1 TO M_SIZE) := (OTHERS => (OTHERS => 0));
-    SIGNAL ready : STD_LOGIC;
+    SIGNAL ready : STD_LOGIC := '0';
 
 BEGIN
     portm : MatrixMulGen PORT MAP(R, clk, a, b, ready, c);
@@ -39,11 +39,15 @@ BEGIN
         FOR i IN 1 TO M_SIZE * M_SIZE LOOP
             clk <= '1';
             WAIT FOR clk_period/2;
-            --matrix_to_string(c, M_SIZE, M_SIZE);
             clk <= '0';
             WAIT FOR clk_period/2;
         END LOOP;
         WAIT;
+    END PROCESS;
+
+    c_process : PROCESS(c)
+    BEGIN
+        matrix_to_string(c, M_SIZE, M_SIZE);
     END PROCESS;
 
 END ARCHITECTURE MatrixTestArch;

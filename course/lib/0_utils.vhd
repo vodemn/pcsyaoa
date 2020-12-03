@@ -6,7 +6,7 @@ USE std.textio.ALL;
 
 PACKAGE utils_package IS
     CONSTANT clk_period : TIME := 20 ns;
-    
+
     FUNCTION to_string (element : INTEGER) RETURN STRING;
 
     FUNCTION fix_int (number : INTEGER) RETURN INTEGER;
