@@ -48,6 +48,8 @@
     <transform xil_pn:end_ts="1605708718" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="4810929200652409879" xil_pn:start_ts="1605708718">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
     </transform>
     <transform xil_pn:end_ts="1605708718" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2946163744599912167" xil_pn:start_ts="1605708718">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -64,15 +66,18 @@
     <transform xil_pn:end_ts="1605706518" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="4779560239316253549" xil_pn:start_ts="1605706518">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1605708718" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-7003947043592972943" xil_pn:start_ts="1605708718">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1605708725" xil_pn:in_ck="1575678098923857506" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-3508832742433244847" xil_pn:start_ts="1605708718">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="SchemeModel.lso"/>
       <outfile xil_pn:name="SchemeModel.ngc"/>
       <outfile xil_pn:name="SchemeModel.ngr"/>

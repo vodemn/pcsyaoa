@@ -1,5 +1,7 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+USE ieee.math_real.ALL;
 LIBRARY STD;
 USE std.textio.ALL;
 LIBRARY work;
@@ -22,7 +24,7 @@ ARCHITECTURE MatrixMulGenArch OF MatrixMulGen IS
     SIGNAL b_inner : MATRIX(1 TO N, 1 TO N);
     SIGNAL c_result : RESULT_MATRIX(1 TO N, 1 TO N);
     SIGNAL counter_expired : BOOLEAN := FALSE;
-    SIGNAL counter : INTEGER := 0;
+    SIGNAL counter : STD_LOGIC_VECTOR(INTEGER(ceil(log2(real(3 * N - 1)))) DOWNTO 0) := (OTHERS => '0');
 BEGIN
 
     ready_observer : PROCESS (R, clk, counter)
@@ -31,13 +33,13 @@ BEGIN
             ready <= '1';
             counter_expired <= FALSE;
         ELSE
-            counter_expired <= counter = 3 * N - 1;
+            counter_expired <= unsigned(counter) = 3 * N - 1;
             IF rising_edge(clk) THEN
                 IF (counter_expired) THEN
                     ready <= '1';
                 ELSE
                     --REPORT "count: " & INTEGER'image(counter);
-                    counter <= counter + 1;
+                    counter <= STD_LOGIC_VECTOR(unsigned(counter) + 1);
                     --matrix_to_string(a_inner, M_SIZE, M_SIZE);
                     --matrix_to_string(b_inner, M_SIZE, M_SIZE);
                     ready <= '0';
@@ -48,9 +50,9 @@ BEGIN
 
     GEN_SHIFT_FIRST : FOR I IN N DOWNTO 1 GENERATE
         PROCESS (counter)
-            variable tmp : INTEGER;
+            VARIABLE tmp : INTEGER;
         BEGIN
-            tmp := counter - I + 1;
+            tmp := to_integer(unsigned(counter)) - I + 1;
             IF (tmp > 0 AND tmp <= N) THEN
                 A_inner(I, 1) <= A(I, tmp);
                 B_inner(1, I) <= B(tmp, I);
