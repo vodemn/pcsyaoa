@@ -6,26 +6,17 @@ USE std.textio.ALL;
 
 PACKAGE utils_package IS
     CONSTANT clk_period : TIME := 20 ns;
+    CONSTANT EL_BITS : INTEGER := 4;
+    CONSTANT EL_SIZE : INTEGER := EL_BITS - 1;
+    CONSTANT RESULT_SIZE : INTEGER := EL_BITS * 2 - 1;
+    CONSTANT M_SIZE : INTEGER := 4;
 
-    FUNCTION to_string (element : INTEGER) RETURN STRING;
-
-    FUNCTION fix_int (number : INTEGER) RETURN INTEGER;
-
+    FUNCTION to_string (vector : STD_LOGIC_VECTOR) RETURN STRING;
 END PACKAGE utils_package;
 
 PACKAGE BODY utils_package IS
-    FUNCTION fix_int (number : INTEGER) RETURN INTEGER IS
-        VARIABLE result : INTEGER;
-    BEGIN
-        IF (number < 0) THEN
-            result := 0;
-        ELSE
-            result := number;
-        END IF;
-        RETURN result;
-    END FUNCTION fix_int;
-
-    FUNCTION to_string (element : INTEGER) RETURN STRING IS
+    FUNCTION to_string (vector : STD_LOGIC_VECTOR) RETURN STRING IS
+        VARIABLE element : INTEGER := to_integer(unsigned(vector));
         VARIABLE str : STRING(1 TO 4);
     BEGIN
         CASE element IS

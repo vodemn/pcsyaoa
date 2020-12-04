@@ -3,6 +3,7 @@ USE ieee.std_logic_1164.ALL;
 LIBRARY STD;
 USE std.textio.ALL;
 LIBRARY work;
+USE work.utils_package.ALL;
 USE work.matrix_package.ALL;
 USE work.processors_package.ALL;
 
@@ -13,39 +14,19 @@ ENTITY MatrixMulGen IS
         a : IN MATRIX(1 TO N, 1 TO N);
         b : IN MATRIX(1 TO N, 1 TO N);
         ready : INOUT STD_LOGIC;
-        c : OUT MATRIX(1 TO N, 1 TO N));
+        c : OUT RESULT_MATRIX(1 TO N, 1 TO N));
 END MatrixMulGen;
 
 ARCHITECTURE MatrixMulGenArch OF MatrixMulGen IS
-    -----------------------------------------------
-    -- [a11][a12][a13] -> [ 0 ][ 0 ][a13][a12][a11]
-    -- [a21][a22][a23] -> [ 0 ][a23][a22][a21][ 0 ]
-    -- [a31][a32][a33] -> [a33][a32][a31][ 0 ][ 0 ]
-    -----------------------------------------------
-    --                    [ 0 ][ 0 ][b33]
-    -- [b11][b12][b13] -> [ 0 ][b32][b23]
-    -- [b21][b22][b23] -> [b31][b22][b13]
-    -- [b31][b32][b33] -> [b21][b12][ 0 ]
-    --                    [b11][ 0 ][ 0 ]
-    -----------------------------------------------
-
-    SIGNAL a_inner : MATRIX(1 TO N, 1 TO N) := (OTHERS => (OTHERS => 0));
-    SIGNAL b_inner : MATRIX(1 TO N, 1 TO N) := (OTHERS => (OTHERS => 0));
-    SIGNAL c_result : MATRIX(1 TO N, 1 TO N) := (OTHERS => (OTHERS => 0));
+    SIGNAL a_inner : MATRIX(1 TO N, 1 TO N) := (OTHERS => (OTHERS => (OTHERS => '0')));
+    SIGNAL b_inner : MATRIX(1 TO N, 1 TO N) := (OTHERS => (OTHERS => (OTHERS => '0')));
+    SIGNAL c_result : RESULT_MATRIX(1 TO N, 1 TO N);
     SIGNAL counter : INTEGER := 0;
-    SIGNAL canOperate : BOOLEAN := TRUE;
 BEGIN
 
-    PROCESS (R, clk)
+    PROCESS (clk)
     BEGIN
-        IF (R = '1') THEN
-            counter <= 0;
-            ready <= '1';
-        END IF;
-
-        canOperate <= R = '0' AND counter < 3 * N - 1;
-
-        IF (canOperate) THEN
+        IF (R = '0' AND counter < 3 * N - 1) THEN
             IF rising_edge(clk) THEN
                 --REPORT "count: " & INTEGER'image(counter);
                 counter <= counter + 1;
@@ -55,19 +36,23 @@ BEGIN
         END IF;
     END PROCESS;
 
-    ready_observer : PROCESS (counter, clk)
+    ready_observer : PROCESS (R, clk)
         VARIABLE counter_expired : BOOLEAN;
     BEGIN
-        counter_expired := counter = 3 * N - 1;
-        IF rising_edge(clk) THEN
-            IF (counter_expired) THEN
-                ready <= '1';
-            ELSE
-                ready <= '0';
+        IF (R = '1') THEN
+            ready <= '1';
+        ELSE
+            counter_expired := counter = 3 * N - 1;
+            IF rising_edge(clk) THEN
+                IF (counter_expired) THEN
+                    ready <= '1';
+                ELSE
+                    ready <= '0';
+                END IF;
             END IF;
-        END IF;
-        IF (counter_expired) THEN
-            c <= c_result;
+            IF (counter_expired) THEN
+                c <= c_result;
+            END IF;
         END IF;
     END PROCESS;
 
@@ -79,8 +64,8 @@ BEGIN
                     A_inner(I, 1) <= A(I, counter - I + 1);
                     B_inner(1, I) <= B(counter - I + 1, I);
                 ELSE
-                    A_inner(I, 1) <= 0;
-                    B_inner(1, I) <= 0;
+                    A_inner(I, 1) <= (OTHERS => '0');
+                    B_inner(1, I) <= (OTHERS => '0');
                 END IF;
             END IF;
         END PROCESS;
