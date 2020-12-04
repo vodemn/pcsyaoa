@@ -50,9 +50,13 @@ BEGIN
             IF rising_edge(clk) THEN
                 IF (use_A_out) THEN
                     a_out <= a;
+                ELSE
+                    a_out <= (OTHERS => '0');
                 END IF;
                 IF (use_b_out) THEN
                     b_out <= b;
+                ELSE
+                    b_out <= (OTHERS => '0');
                 END IF;
                 c <= STD_LOGIC_VECTOR(unsigned(C) + unsigned(A) * unsigned(B));
             END IF;
@@ -60,42 +64,3 @@ BEGIN
     END PROCESS;
 
 END ARCHITECTURE MatrixProcArch;
-
---LIBRARY ieee;
---USE ieee.std_logic_1164.ALL;
---LIBRARY work;
---USE work.utils_package.ALL;--
-
---ENTITY ProcMultiplier IS
---    GENERIC (
---        N : INTEGER := EL_SIZE);
---    PORT (
---        R, clk : IN STD_LOGIC;
---        mt : IN STD_LOGIC_VECTOR(N DOWNTO 1) := (OTHERS => '0'); --mt
---        mn : IN STD_LOGIC_VECTOR(N DOWNTO 1) := (OTHERS => '0'); --mn
---        ready : OUT STD_LOGIC;
---        c : OUT STD_LOGIC_VECTOR(N * 2 DOWNTO 1) := (OTHERS => '0'));
---END ProcMultiplier;--
-
---ARCHITECTURE ProcMultiplierArch OF ProcMultiplier IS
---    SIGNAL result : STD_LOGIC_VECTOR(N * 2 DOWNTO 1) := (OTHERS => '0');
---    SIGNAL counter : INTEGER := 0;
---BEGIN--
-
---    PROCESS (R, clk)
---    BEGIN
---        IF (R = '1') THEN
---            c <= (OTHERS => '0');
---        ELSE
---            IF rising_edge(clk) AND counter < N THEN
---                counter <= counter + 1;
---                result <= shift_left(signed(result), 1);
---                IF (mt(N) = '1') THEN
---                    result <= STD_LOGIC_VECTOR(unsigned(pr_in1) + unsigned(pr_in2)) AFTER clk_period;
---                END IF;
---                ready <= counter = N;
---            END IF;
---        END IF;
---    END PROCESS;--
-
---END ARCHITECTURE ProcMultiplierArch;

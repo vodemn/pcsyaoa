@@ -18,58 +18,61 @@ ENTITY MatrixMulGen IS
 END MatrixMulGen;
 
 ARCHITECTURE MatrixMulGenArch OF MatrixMulGen IS
-    SIGNAL a_inner : MATRIX(1 TO N, 1 TO N) := (OTHERS => (OTHERS => (OTHERS => '0')));
-    SIGNAL b_inner : MATRIX(1 TO N, 1 TO N) := (OTHERS => (OTHERS => (OTHERS => '0')));
+    SIGNAL a_inner : MATRIX(1 TO N, 1 TO N);
+    SIGNAL b_inner : MATRIX(1 TO N, 1 TO N);
     SIGNAL c_result : RESULT_MATRIX(1 TO N, 1 TO N);
+    SIGNAL counter_expired : BOOLEAN := FALSE;
     SIGNAL counter : INTEGER := 0;
 BEGIN
 
-    PROCESS (clk)
-    BEGIN
-        IF (R = '0' AND counter < 3 * N - 1) THEN
-            IF rising_edge(clk) THEN
-                --REPORT "count: " & INTEGER'image(counter);
-                counter <= counter + 1;
-                --matrix_to_string(a_inner, M_SIZE, M_SIZE);
-                --matrix_to_string(b_inner, M_SIZE, M_SIZE);
-            END IF;
-        END IF;
-    END PROCESS;
-
-    ready_observer : PROCESS (R, clk)
-        VARIABLE counter_expired : BOOLEAN;
+    ready_observer : PROCESS (R, clk, counter)
     BEGIN
         IF (R = '1') THEN
             ready <= '1';
+            counter_expired <= FALSE;
         ELSE
-            counter_expired := counter = 3 * N - 1;
+            counter_expired <= counter = 3 * N - 1;
             IF rising_edge(clk) THEN
                 IF (counter_expired) THEN
                     ready <= '1';
                 ELSE
+                    --REPORT "count: " & INTEGER'image(counter);
+                    counter <= counter + 1;
+                    --matrix_to_string(a_inner, M_SIZE, M_SIZE);
+                    --matrix_to_string(b_inner, M_SIZE, M_SIZE);
                     ready <= '0';
                 END IF;
-            END IF;
-            IF (counter_expired) THEN
-                c <= c_result;
             END IF;
         END IF;
     END PROCESS;
 
     GEN_SHIFT_FIRST : FOR I IN N DOWNTO 1 GENERATE
         PROCESS (counter)
+            variable tmp : INTEGER;
         BEGIN
-            IF (counter >= 1) THEN
-                IF ((counter - I) >= 0 AND (counter - I + 1) <= N) THEN
-                    A_inner(I, 1) <= A(I, counter - I + 1);
-                    B_inner(1, I) <= B(counter - I + 1, I);
-                ELSE
-                    A_inner(I, 1) <= (OTHERS => '0');
-                    B_inner(1, I) <= (OTHERS => '0');
-                END IF;
+            tmp := counter - I + 1;
+            IF (tmp > 0 AND tmp <= N) THEN
+                A_inner(I, 1) <= A(I, tmp);
+                B_inner(1, I) <= B(tmp, I);
+            ELSE
+                A_inner(I, 1) <= (OTHERS => '0');
+                B_inner(1, I) <= (OTHERS => '0');
             END IF;
         END PROCESS;
     END GENERATE GEN_SHIFT_FIRST;
+
+    GEN_RESULT_ROWS : FOR I IN N DOWNTO 1 GENERATE
+        GEN_RESULT_COLUMNS : FOR J IN N DOWNTO 1 GENERATE
+            PROCESS (counter_expired, c_result)
+            BEGIN
+                IF (counter_expired) THEN
+                    c(I, J) <= c_result(I, J);
+                ELSE
+                    c(I, J) <= (OTHERS => '0');
+                END IF;
+            END PROCESS;
+        END GENERATE GEN_RESULT_COLUMNS;
+    END GENERATE GEN_RESULT_ROWS;
 
     GEN_PROC_ROWS : FOR I IN 1 TO N - 1 GENERATE -- row--
         GEN_PROC_COLUMNS : FOR J IN 1 TO N - 1 GENERATE -- column
