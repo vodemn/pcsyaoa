@@ -23,7 +23,6 @@ ARCHITECTURE MatrixMulGenArch OF MatrixMulGen IS
     SIGNAL a_inner : MATRIX(1 TO N, 1 TO N);
     SIGNAL b_inner : MATRIX(1 TO N, 1 TO N);
     SIGNAL c_result : RESULT_MATRIX(1 TO N, 1 TO N);
-    SIGNAL counter_expired : BOOLEAN := FALSE;
     SIGNAL counter : STD_LOGIC_VECTOR(INTEGER(ceil(log2(real(3 * N - 1)))) DOWNTO 0) := (OTHERS => '0');
 BEGIN
 
@@ -31,17 +30,12 @@ BEGIN
     BEGIN
         IF (R = '1') THEN
             ready <= '1';
-            counter_expired <= FALSE;
         ELSE
-            counter_expired <= unsigned(counter) = 3 * N - 1;
             IF rising_edge(clk) THEN
-                IF (counter_expired) THEN
+                IF (unsigned(counter) = 3 * N - 1) THEN
                     ready <= '1';
                 ELSE
-                    --REPORT "count: " & INTEGER'image(counter);
                     counter <= STD_LOGIC_VECTOR(unsigned(counter) + 1);
-                    --matrix_to_string(a_inner, M_SIZE, M_SIZE);
-                    --matrix_to_string(b_inner, M_SIZE, M_SIZE);
                     ready <= '0';
                 END IF;
             END IF;
@@ -65,9 +59,9 @@ BEGIN
 
     GEN_RESULT_ROWS : FOR I IN N DOWNTO 1 GENERATE
         GEN_RESULT_COLUMNS : FOR J IN N DOWNTO 1 GENERATE
-            PROCESS (counter_expired, c_result)
+            PROCESS (ready, c_result)
             BEGIN
-                IF (counter_expired) THEN
+                IF (ready = '1') THEN
                     c(I, J) <= c_result(I, J);
                 ELSE
                     c(I, J) <= (OTHERS => '0');
@@ -76,8 +70,8 @@ BEGIN
         END GENERATE GEN_RESULT_COLUMNS;
     END GENERATE GEN_RESULT_ROWS;
 
-    GEN_PROC_ROWS : FOR I IN 1 TO N - 1 GENERATE -- row--
-        GEN_PROC_COLUMNS : FOR J IN 1 TO N - 1 GENERATE -- column
+    GEN_PROC_ROWS : FOR I IN 1 TO N - 1 GENERATE
+        GEN_PROC_COLUMNS : FOR J IN 1 TO N - 1 GENERATE
             pI : MatrixProc PORT MAP(
                 R => R,
                 clk => clk,

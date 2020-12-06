@@ -15,7 +15,7 @@ ARCHITECTURE MatrixTestArch OF MatrixTest IS
             a : IN MATRIX(1 TO N, 1 TO N);
             b : IN MATRIX(1 TO N, 1 TO N);
             ready : INOUT STD_LOGIC;
-            c : OUT RESULT_MATRIX(1 TO N, 1 TO N));
+            c : INOUT RESULT_MATRIX(1 TO N, 1 TO N));
     END COMPONENT;
     SIGNAL R : STD_LOGIC := '1';
     SIGNAL clk : STD_LOGIC := '1';
@@ -47,12 +47,17 @@ BEGIN
         R <= '1';
         WAIT FOR clk_period;
         R <= '0';
+        WAIT FOR M_SIZE * 3 * 2 * clk_period;
+        R <= '1';
         WAIT;
     END PROCESS;
 
     clk_process : PROCESS
     BEGIN
-        clk <= not clk after clk_period / 2;
+        clk <= '1';
+        WAIT FOR clk_period/2;
+        clk <= '0';
+        WAIT FOR clk_period/2;
     END PROCESS;
 
 END ARCHITECTURE MatrixTestArch;
