@@ -1,0 +1,563 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Reading design: MatrixMulGen.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MatrixMulGen.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MatrixMulGen"
+Output Format                      : NGC
+Target Device                      : xc3s2000-5-fg456
+
+---- Source Options
+Top Module Name                    : MatrixMulGen
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/0_utils.vhd" in Library work.
+Package <utils_package> compiled.
+Compiling vhdl file "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/1_matrix.vhd" in Library work.
+Package <matrix_package> compiled.
+Compiling vhdl file "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/2_elements.vhd" in Library work.
+Package <processors_package> compiled.
+Entity <MatrixProc> compiled.
+Entity <MatrixProc> (Architecture <MatrixProcArch>) compiled.
+Compiling vhdl file "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" in Library work.
+Entity <MatrixMulGen> compiled.
+Entity <MatrixMulGen> (Architecture <MatrixMulGenArch>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <MatrixMulGen> in library <work> (architecture <MatrixMulGenArch>) with generics.
+	N = 4
+
+Analyzing hierarchy for entity <MatrixProc> in library <work> (architecture <MatrixProcArch>) with generics.
+	use_a_out = true
+	use_b_out = true
+
+Analyzing hierarchy for entity <MatrixProc> in library <work> (architecture <MatrixProcArch>) with generics.
+	use_a_out = false
+	use_b_out = true
+
+Analyzing hierarchy for entity <MatrixProc> in library <work> (architecture <MatrixProcArch>) with generics.
+	use_a_out = true
+	use_b_out = false
+
+Analyzing hierarchy for entity <MatrixProc> in library <work> (architecture <MatrixProcArch>) with generics.
+	use_a_out = false
+	use_b_out = false
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <MatrixMulGen> in library <work> (Architecture <MatrixMulGenArch>).
+	N = 4
+WARNING:Xst:819 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 62: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_result<4>>
+WARNING:Xst:819 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 62: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_result<4>>
+WARNING:Xst:819 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 62: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_result<4>>
+WARNING:Xst:819 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 62: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_result<4>>
+WARNING:Xst:819 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 62: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_result<3>>
+WARNING:Xst:819 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 62: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_result<3>>
+WARNING:Xst:819 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 62: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_result<3>>
+WARNING:Xst:819 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 62: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_result<3>>
+WARNING:Xst:819 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 62: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_result<2>>
+WARNING:Xst:819 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 62: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_result<2>>
+WARNING:Xst:819 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 62: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_result<2>>
+WARNING:Xst:819 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 62: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_result<2>>
+WARNING:Xst:819 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 62: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_result<1>>
+WARNING:Xst:819 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 62: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_result<1>>
+WARNING:Xst:819 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 62: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_result<1>>
+WARNING:Xst:819 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 62: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_result<1>>
+WARNING:Xst:753 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 85: Unconnected output port 'a_out' of component 'MatrixProc'.
+WARNING:Xst:753 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 94: Unconnected output port 'b_out' of component 'MatrixProc'.
+WARNING:Xst:753 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 85: Unconnected output port 'a_out' of component 'MatrixProc'.
+WARNING:Xst:753 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 94: Unconnected output port 'b_out' of component 'MatrixProc'.
+WARNING:Xst:753 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 85: Unconnected output port 'a_out' of component 'MatrixProc'.
+WARNING:Xst:753 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 94: Unconnected output port 'b_out' of component 'MatrixProc'.
+WARNING:Xst:753 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 104: Unconnected output port 'a_out' of component 'MatrixProc'.
+WARNING:Xst:753 - "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd" line 104: Unconnected output port 'b_out' of component 'MatrixProc'.
+Entity <MatrixMulGen> analyzed. Unit <MatrixMulGen> generated.
+
+Analyzing generic Entity <MatrixProc.1> in library <work> (Architecture <MatrixProcArch>).
+	use_a_out = true
+	use_b_out = true
+Entity <MatrixProc.1> analyzed. Unit <MatrixProc.1> generated.
+
+Analyzing generic Entity <MatrixProc.2> in library <work> (Architecture <MatrixProcArch>).
+	use_a_out = false
+	use_b_out = true
+INFO:Xst:2679 - Register <a_out> in unit <MatrixProc.2> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+Entity <MatrixProc.2> analyzed. Unit <MatrixProc.2> generated.
+
+Analyzing generic Entity <MatrixProc.3> in library <work> (Architecture <MatrixProcArch>).
+	use_a_out = true
+	use_b_out = false
+INFO:Xst:2679 - Register <b_out> in unit <MatrixProc.3> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+Entity <MatrixProc.3> analyzed. Unit <MatrixProc.3> generated.
+
+Analyzing generic Entity <MatrixProc.4> in library <work> (Architecture <MatrixProcArch>).
+	use_a_out = false
+	use_b_out = false
+INFO:Xst:2679 - Register <a_out> in unit <MatrixProc.4> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <b_out> in unit <MatrixProc.4> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+Entity <MatrixProc.4> analyzed. Unit <MatrixProc.4> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <MatrixProc_1>.
+    Related source file is "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/2_elements.vhd".
+    Found 4-bit register for signal <b_out>.
+    Found 8-bit up accumulator for signal <c>.
+    Found 4-bit register for signal <a_out>.
+    Found 4x4-bit multiplier for signal <c$mult0000> created at line 61.
+    Summary:
+	inferred   1 Accumulator(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplier(s).
+Unit <MatrixProc_1> synthesized.
+
+
+Synthesizing Unit <MatrixProc_2>.
+    Related source file is "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/2_elements.vhd".
+    Found 4-bit register for signal <b_out>.
+    Found 8-bit up accumulator for signal <c>.
+    Found 4x4-bit multiplier for signal <c$mult0000> created at line 61.
+    Summary:
+	inferred   1 Accumulator(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Multiplier(s).
+Unit <MatrixProc_2> synthesized.
+
+
+Synthesizing Unit <MatrixProc_3>.
+    Related source file is "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/2_elements.vhd".
+    Found 8-bit up accumulator for signal <c>.
+    Found 4-bit register for signal <a_out>.
+    Found 4x4-bit multiplier for signal <c$mult0000> created at line 61.
+    Summary:
+	inferred   1 Accumulator(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Multiplier(s).
+Unit <MatrixProc_3> synthesized.
+
+
+Synthesizing Unit <MatrixProc_4>.
+    Related source file is "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/2_elements.vhd".
+    Found 8-bit up accumulator for signal <c>.
+    Found 4x4-bit multiplier for signal <c$mult0000> created at line 61.
+    Summary:
+	inferred   1 Accumulator(s).
+	inferred   1 Multiplier(s).
+Unit <MatrixProc_4> synthesized.
+
+
+Synthesizing Unit <MatrixMulGen>.
+    Related source file is "C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd".
+    Found 1-bit register for signal <ready>.
+    Found 6-bit subtractor for signal <$sub0000> created at line 49.
+    Found 6-bit subtractor for signal <$sub0001> created at line 49.
+    Found 6-bit subtractor for signal <$sub0002> created at line 49.
+    Found 6-bit subtractor for signal <$sub0003> created at line 49.
+    Found 7-bit adder for signal <a_inner<1>_1$add0000> created at line 49.
+    Found 7-bit comparator greater for signal <a_inner<1>_1$cmp_gt0000> created at line 50.
+    Found 7-bit comparator lessequal for signal <a_inner<1>_1$cmp_le0000> created at line 50.
+    Found 7-bit adder for signal <a_inner<2>_1$add0000> created at line 49.
+    Found 7-bit comparator greater for signal <a_inner<2>_1$cmp_gt0000> created at line 50.
+    Found 7-bit comparator lessequal for signal <a_inner<2>_1$cmp_le0000> created at line 50.
+    Found 7-bit comparator greater for signal <a_inner<3>_1$cmp_gt0000> created at line 50.
+    Found 7-bit comparator lessequal for signal <a_inner<3>_1$cmp_le0000> created at line 50.
+    Found 7-bit comparator greater for signal <a_inner<4>_1$cmp_gt0000> created at line 50.
+    Found 7-bit comparator lessequal for signal <a_inner<4>_1$cmp_le0000> created at line 50.
+    Found 7-bit adder for signal <b_inner<1>_3$add0000> created at line 49.
+    Found 7-bit adder for signal <b_inner<1>_4$add0000> created at line 49.
+    Found 5-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+Unit <MatrixMulGen> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 16
+ 4x4-bit multiplier                                    : 16
+# Adders/Subtractors                                   : 8
+ 6-bit subtractor                                      : 4
+ 7-bit adder                                           : 4
+# Counters                                             : 1
+ 5-bit up counter                                      : 1
+# Accumulators                                         : 16
+ 8-bit up accumulator                                  : 16
+# Registers                                            : 25
+ 1-bit register                                        : 1
+ 4-bit register                                        : 24
+# Comparators                                          : 8
+ 7-bit comparator greater                              : 4
+ 7-bit comparator lessequal                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 16
+ 4x4-bit multiplier                                    : 16
+# Adders/Subtractors                                   : 8
+ 6-bit subtractor                                      : 4
+ 7-bit adder                                           : 4
+# Counters                                             : 1
+ 5-bit up counter                                      : 1
+# Accumulators                                         : 16
+ 8-bit up accumulator                                  : 16
+# Registers                                            : 97
+ Flip-Flops                                            : 97
+# Comparators                                          : 8
+ 7-bit comparator greater                              : 4
+ 7-bit comparator lessequal                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <MatrixMulGen> ...
+
+Optimizing unit <MatrixProc_1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MatrixMulGen, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 230
+ Flip-Flops                                            : 230
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MatrixMulGen.ngr
+Top Level Output File Name         : MatrixMulGen
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 259
+
+Cell Usage :
+# BELS                             : 655
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 259
+#      LUT2_D                      : 1
+#      LUT2_L                      : 9
+#      LUT3                        : 16
+#      LUT3_L                      : 11
+#      LUT4                        : 102
+#      LUT4_D                      : 1
+#      LUT4_L                      : 10
+#      MUXCY                       : 112
+#      MUXF5                       : 3
+#      XORCY                       : 128
+# FlipFlops/Latches                : 230
+#      FDC                         : 128
+#      FDE                         : 101
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 258
+#      IBUF                        : 129
+#      OBUF                        : 129
+# MULTs                            : 16
+#      MULT18X18                   : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s2000fg456-5 
+
+ Number of Slices:                      229  out of  20480     1%  
+ Number of Slice Flip Flops:            230  out of  40960     0%  
+ Number of 4 input LUTs:                411  out of  40960     1%  
+ Number of IOs:                         259
+ Number of bonded IOBs:                 259  out of    333    77%  
+ Number of MULT18X18s:                   16  out of     40    40%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 230   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+R                                  | IBUF                   | 129   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 11.332ns (Maximum Frequency: 88.242MHz)
+   Minimum input arrival time before clock: 10.342ns
+   Maximum output required time after clock: 9.037ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 11.332ns (frequency: 88.242MHz)
+  Total number of paths / destination ports: 14874 / 235
+-------------------------------------------------------------------------
+Delay:               11.332ns (Levels of Logic = 7)
+  Source:            counter_1 (FF)
+  Destination:       GEN_PROC_ROWS[1].pA/c_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: counter_1 to GEN_PROC_ROWS[1].pA/c_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             80   0.626   2.104  counter_1 (counter_1)
+     LUT2:I0->O            1   0.479   0.704  a_inner<4>_1_and000072_SW0 (N104)
+     LUT4_D:I3->O          4   0.479   0.802  a_inner<4>_1_and000072 (a_inner<4>_1_and000072)
+     LUT4:I3->O            2   0.479   0.745  a_inner<4>_1_mux0000<2> (a_inner<4><1><2>)
+     MULT18X18:A2->P6      1   2.187   0.851  GEN_PROC_ROWS[1].pB/Mmult_c_mult0000 (GEN_PROC_ROWS[1].pB/c_mult0000<6>)
+     LUT2:I1->O            1   0.479   0.000  GEN_PROC_ROWS[1].pB/Maccum_c_lut<6> (GEN_PROC_ROWS[1].pB/Maccum_c_lut<6>)
+     MUXCY:S->O            0   0.435   0.000  GEN_PROC_ROWS[1].pB/Maccum_c_cy<6> (GEN_PROC_ROWS[1].pB/Maccum_c_cy<6>)
+     XORCY:CI->O           1   0.786   0.000  GEN_PROC_ROWS[1].pB/Maccum_c_xor<7> (Result<7>2)
+     FDC:D                     0.176          GEN_PROC_ROWS[1].pB/c_7
+    ----------------------------------------
+    Total                     11.332ns (6.126ns logic, 5.206ns route)
+                                       (54.1% logic, 45.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 3429 / 189
+-------------------------------------------------------------------------
+Offset:              10.342ns (Levels of Logic = 8)
+  Source:            a<4><2><3> (PAD)
+  Destination:       GEN_PROC_ROWS[1].pB/c_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: a<4><2><3> to GEN_PROC_ROWS[1].pB/c_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.715   0.976  a_4__2__3_IBUF (a_4__2__3_IBUF)
+     LUT4:I0->O            1   0.479   0.704  a_inner<4>_1_and0000199_SW1_SW0 (N150)
+     LUT4:I3->O            1   0.479   0.851  a_inner<4>_1_and0000199_SW1 (N94)
+     LUT4:I1->O            2   0.479   0.745  a_inner<4>_1_mux0000<3> (a_inner<4><1><3>)
+     MULT18X18:A3->P6      1   2.187   0.851  GEN_PROC_ROWS[1].pB/Mmult_c_mult0000 (GEN_PROC_ROWS[1].pB/c_mult0000<6>)
+     LUT2:I1->O            1   0.479   0.000  GEN_PROC_ROWS[1].pB/Maccum_c_lut<6> (GEN_PROC_ROWS[1].pB/Maccum_c_lut<6>)
+     MUXCY:S->O            0   0.435   0.000  GEN_PROC_ROWS[1].pB/Maccum_c_cy<6> (GEN_PROC_ROWS[1].pB/Maccum_c_cy<6>)
+     XORCY:CI->O           1   0.786   0.000  GEN_PROC_ROWS[1].pB/Maccum_c_xor<7> (Result<7>2)
+     FDC:D                     0.176          GEN_PROC_ROWS[1].pB/c_7
+    ----------------------------------------
+    Total                     10.342ns (6.215ns logic, 4.127ns route)
+                                       (60.1% logic, 39.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 257 / 129
+-------------------------------------------------------------------------
+Offset:              9.037ns (Levels of Logic = 2)
+  Source:            ready (FF)
+  Destination:       c<1><1><7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: ready to c<1><1><7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q            129   0.626   2.342  ready (ready_OBUF)
+     LUT2:I0->O            1   0.479   0.681  c<4>_4_mux0000<7>1 (c_4__4__7_OBUF)
+     OBUF:I->O                 4.909          c_4__4__7_OBUF (c<4><4><7>)
+    ----------------------------------------
+    Total                      9.037ns (6.014ns logic, 3.023ns route)
+                                       (66.5% logic, 33.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.48 secs
+ 
+--> 
+
+Total memory usage is 4521908 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   24 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/vadim/Documents/University/pcsyaoa/course/synth/MatrixTest_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="math_real" />
+            <top_module name="matrix_package" />
+            <top_module name="matrixtest" />
+            <top_module name="numeric_std" />
+            <top_module name="processors_package" />
+            <top_module name="std_logic_1164" />
+            <top_module name="textio" />
+            <top_module name="utils_package" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/matrixtest/r" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r</obj_property>
+      <obj_property name="ObjectShortName">r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/matrixtest/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/matrixtest/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[1:4,1:4]</obj_property>
+      <obj_property name="ObjectShortName">a[1:4,1:4]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <wvobject fp_name="/matrixtest/a[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,1:4]</obj_property>
+         <obj_property name="ObjectShortName">a[1,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/a[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,1:4]</obj_property>
+         <obj_property name="ObjectShortName">a[2,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/a[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,1:4]</obj_property>
+         <obj_property name="ObjectShortName">a[3,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/a[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,1:4]</obj_property>
+         <obj_property name="ObjectShortName">a[4,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/matrixtest/b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b[1:4,1:4]</obj_property>
+      <obj_property name="ObjectShortName">b[1:4,1:4]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <wvobject fp_name="/matrixtest/b[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,1:4]</obj_property>
+         <obj_property name="ObjectShortName">b[1,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/b[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,1:4]</obj_property>
+         <obj_property name="ObjectShortName">b[2,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/b[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,1:4]</obj_property>
+         <obj_property name="ObjectShortName">b[3,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/b[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,1:4]</obj_property>
+         <obj_property name="ObjectShortName">b[4,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/matrixtest/c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">c[1:4,1:4]</obj_property>
+      <obj_property name="ObjectShortName">c[1:4,1:4]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <wvobject fp_name="/matrixtest/c[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,1:4]</obj_property>
+         <obj_property name="ObjectShortName">c[1,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/c[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,1:4]</obj_property>
+         <obj_property name="ObjectShortName">c[2,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/c[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,1:4]</obj_property>
+         <obj_property name="ObjectShortName">c[3,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/c[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,1:4]</obj_property>
+         <obj_property name="ObjectShortName">c[4,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/matrixtest/ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/matrixtest/portm/a_inner" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a_inner[1:4,1:4]</obj_property>
+      <obj_property name="ObjectShortName">a_inner[1:4,1:4]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <wvobject fp_name="/matrixtest/portm/a_inner[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,1:4]</obj_property>
+         <obj_property name="ObjectShortName">a_inner[1,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/portm/a_inner[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,1:4]</obj_property>
+         <obj_property name="ObjectShortName">a_inner[2,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/portm/a_inner[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,1:4]</obj_property>
+         <obj_property name="ObjectShortName">a_inner[3,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/portm/a_inner[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,1:4]</obj_property>
+         <obj_property name="ObjectShortName">a_inner[4,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/matrixtest/portm/b_inner" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b_inner[1:4,1:4]</obj_property>
+      <obj_property name="ObjectShortName">b_inner[1:4,1:4]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <wvobject fp_name="/matrixtest/portm/b_inner[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,1:4]</obj_property>
+         <obj_property name="ObjectShortName">b_inner[1,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/portm/b_inner[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,1:4]</obj_property>
+         <obj_property name="ObjectShortName">b_inner[2,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/portm/b_inner[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,1:4]</obj_property>
+         <obj_property name="ObjectShortName">b_inner[3,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/portm/b_inner[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,1:4]</obj_property>
+         <obj_property name="ObjectShortName">b_inner[4,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/matrixtest/portm/c_result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">c_result[1:4,1:4]</obj_property>
+      <obj_property name="ObjectShortName">c_result[1:4,1:4]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <wvobject fp_name="/matrixtest/portm/c_result[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,1:4]</obj_property>
+         <obj_property name="ObjectShortName">c_result[1,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/portm/c_result[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,1:4]</obj_property>
+         <obj_property name="ObjectShortName">c_result[2,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/portm/c_result[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,1:4]</obj_property>
+         <obj_property name="ObjectShortName">c_result[3,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/matrixtest/portm/c_result[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,1:4]</obj_property>
+         <obj_property name="ObjectShortName">c_result[4,1:4]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/matrixtest/portm/counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter[4:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[4:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>

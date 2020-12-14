@@ -1,0 +1,5 @@
+vhdl work "../lib/0_utils.vhd"
+vhdl work "../lib/2_elements.vhd"
+vhdl work "../lib/1_matrix.vhd"
+vhdl work "../lib/3_matrix_mul_gen.vhd"
+vhdl work "../lib/5_test.vhd"

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;c_result&lt;4&gt;&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;c_result&lt;4&gt;&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;c_result&lt;4&gt;&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;c_result&lt;4&gt;&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;c_result&lt;3&gt;&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;c_result&lt;3&gt;&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;c_result&lt;3&gt;&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;c_result&lt;3&gt;&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;c_result&lt;2&gt;&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;c_result&lt;2&gt;&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;c_result&lt;2&gt;&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;c_result&lt;2&gt;&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;c_result&lt;1&gt;&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;c_result&lt;1&gt;&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;c_result&lt;1&gt;&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;c_result&lt;1&gt;&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">85</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">a_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">MatrixProc</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">94</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">b_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">MatrixProc</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">85</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">a_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">MatrixProc</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">94</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">b_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">MatrixProc</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">85</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">a_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">MatrixProc</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">94</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">b_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">MatrixProc</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">104</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">a_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">MatrixProc</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/vadim/Documents/University/pcsyaoa/course/lib/3_matrix_mul_gen.vhd</arg>&quot; line <arg fmt="%d" index="2">104</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">b_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">MatrixProc</arg>&apos;.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">a_out</arg>&gt; in unit &lt;<arg fmt="%s" index="2">MatrixProc.2</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">b_out</arg>&gt; in unit &lt;<arg fmt="%s" index="2">MatrixProc.3</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">a_out</arg>&gt; in unit &lt;<arg fmt="%s" index="2">MatrixProc.4</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">b_out</arg>&gt; in unit &lt;<arg fmt="%s" index="2">MatrixProc.4</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+</messages>
+

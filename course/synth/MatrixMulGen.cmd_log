@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/vadim/Documents/University/pcsyaoa/course/synth/MatrixMulGen.xst" -ofn "C:/Users/vadim/Documents/University/pcsyaoa/course/synth/MatrixMulGen.syr" 

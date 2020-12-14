@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/vadim/Documents/University/pcsyaoa/course/synth/MatrixTest_isim_beh.exe" -prj "C:/Users/vadim/Documents/University/pcsyaoa/course/synth/MatrixTest_beh.prj" "work.MatrixTest" 
